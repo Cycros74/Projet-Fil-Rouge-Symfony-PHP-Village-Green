@@ -1,39 +1,59 @@
 security:
-    # https://symfony.com/doc/current/security.html#registering-the-user-hashing-passwords
-    password_hashers:
-        Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
-    # https://symfony.com/doc/current/security.html#loading-the-user-the-user-provider
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    # La partie providers définit comment les utilisateurs vont être récupérés
+    # Dans un premier temps, on indique que l'utilisateur se trouve dans la base de données
+    # Nous devons indiquer également que l'utilisateur devra se connecter avec son adresse mail
     providers:
         users_in_memory: { memory: null }
+        from_database:
+            entity:
+                class: App\Entity\Client
+                property: cliEmail
+    # La partie firewalls permet de définir les composants qui vont permettre d'authentifier les utilisateurs
+    # Nous devons rappeler ce provider dans la partie main du firewalls
+    # Il nous faut également indiquer par quelle méthode l'utilisateur pourra se connecter dans la partie main (form_login). Dans notre cas, il se connectera avec un formulaire que nous avons créé
+    # Nous allons définir le chemin permettant la déconnexion dans la partie main (logout), ainsi que la redirection (target) suite à cette déconnexion de la même manière
+    # Protection CSRF dans les formulaires de connexion avec le csrf_token_generator. Cette protection permet d'éviter à un attaquant de soumettre une requête Web pouvant inclure une fuite de données, un changement d'état de session ou une manipulation du compte utilisateur final 
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
-            lazy: true
-            provider: users_in_memory
+            anonymous: true
+            logout:
+                path: /logout
+                target: /
+            form_login:
+                check_path: /login
+                login_path: /login
+                csrf_token_generator: security.csrf.token_manager
+            provider: from_database
 
             # activate different ways to authenticate
-            # https://symfony.com/doc/current/security.html#the-firewall
+            # https://symfony.com/doc/current/security.html#firewalls-authentication
 
             # https://symfony.com/doc/current/security/impersonating_user.html
             # switch_user: true
 
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
+    # La partie access-control permet de définir les niveaux d'accès au site
     access_control:
-        # - { path: ^/admin, roles: ROLE_ADMIN }
-        # - { path: ^/profile, roles: ROLE_USER }
+         - { path: ^/admin, roles: ROLE_ADMIN }
+         - { path: ^/produit/new, roles: ROLE_ADMIN }
+         - { path: ^/commande, roles: ROLE_USER }
+         # - { path: ^/profile, roles: ROLE_USER }
+    # https://symfony.com/doc/current/security.html#hierarchical-roles     
+    # Paramétrage des rôles pour que l'admin possède les mêmes droits que l'utilisateur, notamment pour valider le panier
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+    # Il faut renseigner l'encoder utilisé pour le hash du mot de passe
+    # bcrypt étant la méthode utilisée pour le hash du mot de passe et cost le logarithme binaire du nombre d'itérations choisi
+    encoders:
+        App\Entity\Client:
+            algorithm: bcrypt
+            cost: 12
 
-when@test:
-    security:
-        password_hashers:
-            # By default, password hashers are resource intensive and take time. This is
-            # important to generate secure password hashes. In tests however, secure hashes
-            # are not important, waste resources and increase test times. The following
-            # reduces the work factor to the lowest possible values.
-            Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface:
-                algorithm: auto
-                cost: 4 # Lowest possible value for bcrypt
-                time_cost: 3 # Lowest possible value for argon
-                memory_cost: 10 # Lowest possible value for argon
+
+## Village Green / Modification méthode hash password ClientController +
+##Bouton afficher/cacher mdp dans formulaire login

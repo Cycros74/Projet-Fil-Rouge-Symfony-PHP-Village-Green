@@ -1,0 +1,1624 @@
+/***** BASE.HTML ****/
+
+body
+{
+    background-size: 100%;
+    background-attachment: fixed;
+    background-image: url('../img/BACKGROUND/background_village.png') !important;
+}
+
+header
+{
+    background-image: url('../img/HEADER/3_bandes.png');
+}
+
+#corps
+{
+    background-color: #e8e9ea;
+}
+
+#navbar
+{
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+#nav1
+{
+    float: right;
+    text-align: right;
+}
+
+#nav2
+{
+    font-size: 16pt;
+}
+
+#nav3
+{
+    font-size: 13pt;
+    margin-left: 15px;
+}
+
+#cliquez
+{
+    float: left;
+}
+
+#guitare
+{
+    width: 100%;
+    height: 100%;
+}
+
+#promo
+{
+    float: right;
+}
+
+#centre
+{
+    width: 100%;
+}
+
+#img2, #img3, #img4
+{
+    width: 100%;
+    height: auto;
+    padding: 1px;
+}
+
+#imgguit
+{
+    padding: 1px;
+}
+
+#img_saxo
+{
+    width: 100%;
+    height: auto;
+}
+
+#img9
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rowb
+{
+    height: auto;
+    padding-left: 10px;
+}
+
+h2
+{
+    text-align: center;
+}
+
+#produitDropdown
+{
+    margin-top: 8px;
+}
+
+#produitDropdown2
+{
+    display: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown navbar-toggler-icon on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.grid
+{
+    position: relative;
+    margin: 0 auto;
+}
+
+#bouton_deconnexion
+{
+    float :right;
+    margin-top: -7px;
+}
+
+#nav_infos, #clientDropdown
+{
+    margin-top: 5px;
+}
+
+/**** HOME/INDEX.HTML ****/
+
+#corps_index
+{
+    background-color: #e8e9ea;
+}
+
+/**** PRODUIT/INDEX.HTML ****/
+
+.card
+{
+    height: 515px;
+    width: 350px;
+}
+
+.card-img-top
+{
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+}
+
+/**** PRODUIT/_FORM.HTML ****/
+
+#btn_ajouter, #btn_retour
+{
+    margin-bottom: 20px;
+}
+
+#btn_supprimer
+{
+    margin-top: -60px;
+}
+
+/**** PRODUIT/SHOW.HTML ****/
+
+#btn_modif, #btn_retour2
+{
+    margin-bottom: 20px;
+}
+
+#img_show
+{
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+/**** PRODUIT/NEW.HTML ****/
+
+#new_product
+{
+  width: 25%;
+  margin-bottom: 40px;
+}
+
+/***** CLIENT/INDEX.HTML ****/
+
+#admin_clients
+{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#btn_accueil a
+{
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 19.5%;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: white;
+}
+
+#btn_accueil a:link, #btn_accueil a:visited, #btn_accueil a:focus 
+{
+    background: #303241;
+    border-radius: 5px;
+}
+
+#btn_accueil a:hover
+{
+    background: orange;
+}
+
+#btn_accueil a:active
+{
+    background: red;
+    color: white;
+}
+
+#btn_voir
+{
+    margin-top: -20px;
+}
+
+#bouton_create
+{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#img_clients
+{
+    width: 250px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+/***** CLIENT/NEW.HTML ****/
+
+#img_inscription
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#mail, #mdpasse, #conf_mdpasse, #nom, #prenom, #adresse, #cp, #ville
+{
+    margin-left: -8px;
+}
+
+#identifiants
+{
+    padding-right: 30px;
+}
+
+.progress
+{
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#afficher_mdp 
+{
+    background-color: #E8E9EA;
+    margin-top: 7px;
+    float: right;
+    font-size: 10px;
+}
+
+#afficher_conf_mdp
+{
+    background-color: #E8E9EA;
+    margin-top: 7px;
+    float: right;
+    font-size: 10px;
+}
+
+#btn_inscription
+{
+    padding-bottom: 20px;
+}
+
+/**** CLIENT/EDIT.HTML ****/
+
+#img_inscription2
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#mail2, #nom2, #prenom2, #adresse2, #cp2, #ville2
+{
+    margin-left: -8px;
+}
+
+#btn_edit_profil
+{
+  padding-bottom: 20px;
+}
+
+/**** CLIENT/SHOW.HTML ****/
+
+#btn_retour3
+{
+    margin-bottom: 20px;
+}
+
+#btn_modification2
+{
+    margin-bottom: 20px;
+}
+
+#btn_suppr
+{
+    margin-top: -59px;
+    margin-bottom: 20px;
+    margin-right: -30px;
+}
+
+#fiche_client
+{
+    margin-top: -40px;
+    padding-bottom: 40px;
+}
+
+#img_profil
+{
+    width: 300px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+/**** SECURITY/LOGIN.HTML ****/
+
+#img_connexion 
+{
+    width: 35%;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+#mdp_oublie
+{
+    font-size: 13px;
+    margin-bottom: 25px;
+    margin-top: -15px;
+}
+
+#afficher_login_mdp
+{
+    background-color: #E8E9EA;
+    float: right;
+    font-size: 10px;
+    margin-top: -12px;
+}
+
+/* Icone FontAwesome */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Icone FontAwesome */
+.icon {
+  padding-top: 10px;
+  height: 38px;
+  background: #007BFF;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/**** SECURITY/FORGOTTEN_PASSWORD.HTML ****/
+
+#forgot_img
+{
+    width: 20%;
+}
+
+#bouton_envoi3
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/**** SECURITY/RESET_PASSWORD.HTML ****/
+
+#label_reset_mdp
+{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#reset_img
+{
+    width: 50%;
+}
+
+#btn_reset
+{
+  margin-top: 10px; 
+  margin-bottom: 20px;
+}
+
+#inputPassword
+{
+  margin-bottom: 5px;
+}
+
+/**** CART/INDEX.HTML ****/
+
+#button_panier
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#img_panier
+{
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+/**** CLIENT/ADRESSE.HTML ****/
+
+#adresse_client
+{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#adresse_panier
+{
+    margin-left: 10px;
+}
+
+#card_panier
+{
+    width: 350px; 
+    height: 200px;
+}
+
+#img_adresse
+{
+    width: 8%;
+}
+
+#adresse_vide
+{
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+#liens1, #liens2
+{
+  display: inline-block;
+}
+
+/**** CLIENT/AJOUT_ADRESSE.HTML ****/
+
+#adresse_submit
+{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+/**** COMMANDE/INDEX.HTML ****/
+
+#img_conf_commande
+{
+    width: 15%; 
+    float: right; 
+    margin-right: 100px;
+}
+
+#titre_conf_commande
+{
+    margin-bottom: 70px;
+}
+
+#p_conf_commande
+{
+    padding-bottom: 30px;
+}
+
+/**** ORDER/ADD.HTML ****/
+
+#titre_order
+{
+    margin-bottom: 40px;
+}
+
+#checkout-button
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -6px;
+}
+
+#add_adresse_liv, #add_adresse_transp, #add_adresse_fact
+  {
+    background-color: #f4f8ff;
+    padding: 20px 55px;
+    padding-left: 10px;
+    margin-top: 7px;
+    font-size: 14px;
+  }
+
+#recap_commande
+{
+  padding-bottom: 20px;
+}
+
+/**** ORDER/INDEX.HTML ****/
+
+#lien_adresse
+  {
+      padding-bottom: 30px;
+  }
+
+legend
+  {
+    font-weight: bold;
+  }
+
+  .form-check
+  {
+    background-color: #f4f8ff;
+    padding: 20px 55px;
+    margin-top: 7px;
+    font-size: 14px;
+  }
+
+  .order-summary
+  {
+    background-color: #f4f8ff;
+    padding: 20px 35px;
+    margin-top: 7px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+/**** BUNDLE/ERROR403.HTML ****/
+
+#error403 a
+{
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 19.5%;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: white;
+}
+
+#error403 a:link, #error403 a:visited, #error403 a:focus 
+{
+    background: #2F3749;
+    border-radius: 5px;
+}
+
+#error403 a:hover
+{
+    background: orange;
+}
+
+#error403 a:active
+{
+    background: red;
+    color: white;
+}
+
+/**** BUNDLE/ERROR404.HTML ****/
+
+#error404 a
+{
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 19.5%;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: white;
+}
+
+#error404 a:link, #error404 a:visited, #error404 a:focus 
+{
+    background: #303241;
+    border-radius: 5px;
+}
+
+#error404 a:hover
+{
+    background: orange;
+}
+
+#error404 a:active
+{
+    background: red;
+    color: white;
+}
+
+#img_error404
+{
+    width:1000px; 
+    height:600px;
+}
+
+/**** BUNDLE/ERROR405.HTML ****/
+
+#error405 a
+{
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 19.5%;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: white;
+}
+
+#error405 a:link, #error405 a:visited, #error405 a:focus 
+{
+    background: #2F3749;
+    border-radius: 5px;
+}
+
+#error405 a:hover
+{
+    background: orange;
+}
+
+#error405 a:active
+{
+    background: red;
+    color: white;
+}
+
+#img_error405
+{
+    width:800px; 
+    height:400px;
+}
+
+/**** COMMANDE_CANCEL/INDEX.HTML ****/
+
+#titre_erreur_paiement
+{
+  margin-bottom: 50px;
+}
+
+#img_erreur_paiement
+{
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+#btn_erreur_paiement
+{
+  margin-bottom: 20px;
+}
+
+/**** MEDIA QUERIES INDEX.HTML ET BASE.HTML (Responsive à tester sur http://ami.responsivedesign.is/) ****/
+/*
+Desktop
+1600x992px scaled down to scale(0.3181)
+Laptop
+1280x802px scaled down to scale(0.277)
+Tablet
+768x1024px scaled down to scale(0.219)
+Mobile
+320x480px scaled down to scale(0.219)
+*/
+
+/* @media only screen and (min-width: 320px) and (max-width: 480px)
+{
+    #nav_infos
+    {
+      color: black !important;
+      padding-right: 10px;
+      padding-top: 130px;
+    }
+
+    #clientDropdown
+    {
+      color: black !important;
+      padding-right: 10px;
+    }
+
+    #img_picto_panier
+    {
+      margin-right: -30px;
+    }
+
+    #img_picto_drapeau
+    {
+      margin-right: 10px;
+    }
+
+    #guitare
+    {
+      width: 150%;
+      padding-bottom: 20px;
+      margin-left: -60px;
+    }
+
+    #banniere_droite
+    {
+      margin-left: -10px;
+    }
+
+    #imgguit, #imgbat, #imgpia, #imgmic, #img_sono, #img_case, #img_cable, #img_saxo
+    {
+      width: 100%;
+      display: block;
+    }
+
+    #titre_categories
+    {
+      margin-left: 12px
+    }
+
+    #titre_meilleures_ventes
+    {
+      margin-left: -20px
+    }
+
+    #titre_partenaires
+    {
+      margin-top: 30px;
+      margin-left: -20px;
+    }
+
+    #img_meilleures_ventes
+    {
+      width: 95%;
+      padding-right: 25px;
+    }
+
+    #img_partenaires
+    {
+      margin-left: -5px;
+      width: 90%;
+      padding-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px)
+  {
+    #nav_infos
+    {
+      color: white !important;
+      padding-right: 10px;
+      padding-top: 25px;
+    }
+
+    #clientDropdown
+    {
+      color: white !important;
+      padding-right: 10px;
+      margin-top: 10px;
+    }
+
+    #img_picto_panier
+    {
+      padding-top: 10px;
+      margin-right: -40px;
+    }
+
+    #img_picto_drapeau
+    {
+      margin-right: 10px;
+    }
+
+    #titre_categories
+    {
+      padding-left: 20px;
+    }
+
+    #guitare
+    {
+      padding-bottom: 20px;
+      margin-left: -12px;
+    }
+
+    #banniere_droite
+    {
+      display: none;
+    }
+
+    #imgguit, #imgbat, #imgpia, #imgmic, #img_sono, #img_case, #img_cable, #img_saxo
+    {
+      width: 90%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    #titre_partenaires
+    {
+      margin-top: 30px;
+    }
+
+    #img_meilleures_ventes
+    {
+      width: 95%;
+      padding-left: 20px;
+    }
+
+    #img_partenaires
+    {
+      margin-left: 15px;
+      width: 90%;
+      padding-bottom: 10px;
+    }
+  }*/
+
+  @media only screen and (min-width: 320px) and (max-width: 374px)
+  {
+    /**** ACCUEIL ****/
+    #nav_infos
+    {
+      color: black !important;
+      padding-right: 30px;
+      padding-top: 130px;
+    }
+
+    #clientDropdown
+    {
+      color: black !important;
+      padding-right: 10px;
+    }
+
+    #img_picto_panier
+    {
+      margin-right: -10px;
+    }
+
+    #img_picto_drapeau
+    {
+      margin-right: 30px;
+    }
+
+    #guitare
+    {
+      width: 143%;
+      padding-bottom: 20px;
+      margin-left: -60px;
+    }
+
+    #banniere_droite
+    {
+      margin-left: -9px;
+    }
+
+    #imgguit, #imgbat, #imgpia, #imgmic, #img_sono, #img_case, #img_cable, #img_saxo
+    {
+      width: 100%;
+      display: block;
+    }
+
+    #titre_categories
+    {
+      margin-left: 12px
+    }
+
+    #titre_meilleures_ventes
+    {
+      margin-left: -20px
+    }
+
+    #titre_partenaires
+    {
+      margin-top: 30px;
+      margin-left: -20px;
+    }
+
+    #img_meilleures_ventes
+    {
+      width: 95%;
+      padding-right: 25px;
+    }
+
+    #img_partenaires
+    {
+      margin-left: -5px;
+      width: 90%;
+      padding-bottom: 10px;
+    }
+
+    #img8
+    {
+        margin-left: -2px;
+        width: 100%;
+    }
+
+    #produitDropdown2
+    {
+        padding-right: 10px;
+        display: inline-block;
+    }
+
+    #bouton_deconnexion
+    {
+        display: none;
+    }
+
+    /**** CLIENT/ADRESSE.HTML ****/
+    hr
+    {
+        margin-top: 70px;
+    }
+
+    #adresse_panier
+    {
+        margin-bottom: 10px;
+    }
+
+    #img_adresse
+    {
+        width: 50px;
+    }
+
+    /**** CLIENT/SHOW.HTML ****/
+    #btn_modification2
+    {
+        margin-left: -4px;
+    }
+
+    /**** ORDER/INDEX.HTML ****/
+    #recap_panier
+    {
+        padding-left: 50px;
+    }
+
+    #order_submit
+    {
+        margin-left: 0 auto;
+    }
+
+    .order-summary
+    {
+      margin-bottom: 10px;
+    }
+
+    /**** CART/INDEX.HTML ****/
+    #supprimer_mon_panier
+    {
+        margin-top: 10px;
+    }
+
+    /**** COMMANDE_VALIDER/INDEX.HTML ****/
+    #img_conf_commande
+    {
+        width: 50%;
+        padding-left: 35px;
+        padding-bottom: 30px;
+    }
+
+    /**** PRODUIT/NEW.HTML ****/
+    #new_product
+    {
+      width: 50%;
+    }
+
+    /**** PRODUIT/INDEX.HTML ****/
+    .card
+    {
+      height: 600px;
+    }
+
+    #btn_modif
+    {
+      margin-right: 105px;
+    }
+
+    /**** PRODUIT/EDIT.HTML ****/
+    #btn_ajouter
+    {
+      margin-right: 80px;
+    }
+  }
+
+  @media only screen and (min-width: 375px) and (max-width: 424px)
+  {
+    /**** ACCUEIL ****/
+    #alerte1
+    {
+        margin-left: 3px !important;
+    }
+
+    #nav_infos
+    {
+      color: black !important;
+      padding-right: 30px;
+      padding-top: 130px;
+    }
+
+    #clientDropdown
+    {
+      color: black !important;
+      padding-right: 10px;
+    }
+
+    #img_picto_panier
+    {
+      margin-right: -10px;
+    }
+
+    #img_picto_drapeau
+    {
+      margin-right: 30px;
+    }
+
+    #guitare
+    {
+      width: 134%;
+      padding-bottom: 20px;
+      margin-left: -60px;
+    }
+
+    #banniere_droite
+    {
+      margin-left: 10px;
+    }
+
+    #imgguit, #imgbat, #imgpia, #imgmic, #img_sono, #img_case, #img_cable, #img_saxo
+    {
+      width: 100%;
+      display: block;
+    }
+
+    #titre_categories
+    {
+      margin-left: 12px
+    }
+
+    #titre_meilleures_ventes
+    {
+      margin-left: -20px
+    }
+
+    #titre_partenaires
+    {
+      margin-top: 30px;
+      margin-left: -20px;
+    }
+
+    #img_meilleures_ventes
+    {
+      width: 95%;
+      padding-right: 25px;
+    }
+
+    #img_partenaires
+    {
+      margin-left: -5px;
+      width: 90%;
+      padding-bottom: 10px;
+    }
+
+    #img8
+    {
+        margin-left: -5px;
+        width: 100%;
+    }
+
+    #produitDropdown2
+    {
+        padding-right: 10px;
+        display: inline-block;
+    }
+
+    #bouton_deconnexion
+    {
+        display: none;
+    }
+
+    /**** CLIENT/ADRESSE.HTML ****/
+    hr
+    {
+        margin-top: 70px;
+    }
+
+    #adresse_panier
+    {
+        margin-bottom: 10px;
+    }
+
+    #img_adresse
+    {
+        margin-top: 20px;
+        margin-left: 30px;
+        width: 70px;
+    }
+
+    /**** ORDER/INDEX.HTML ****/
+    #recap_panier
+    {
+        padding-left: 50px;
+    }
+
+    #order_submit
+    {
+        margin-left: 0 auto;
+    }
+
+    .order-summary
+    {
+      margin-bottom: 10px;
+    }
+
+    /**** CART/INDEX.HTML ****/
+    #supprimer_mon_panier
+    {
+        margin-top: 10px;
+    }
+
+    /**** COMMANDE_VALIDER/INDEX.HTML ****/
+    #img_conf_commande
+    {
+      width: 40%;
+      margin-bottom: 20px;
+    }
+
+    /**** PRODUIT/NEW.HTML ****/
+    #new_product
+    {
+      width: 50%;
+    }
+
+    /**** PRODUIT/INDEX.HTML ****/
+    .card
+    {
+      height: 600px;
+    }
+  }
+
+  /* TAILLE QUAND FENETRE REDUITE AU MINIMUM */
+  @media only screen and (min-width: 425px) and (max-width: 767px)
+  {
+    /**** ACCUEIL ****/
+    #alerte1
+    {
+        margin-left: 5px !important;
+    }
+
+    #nav_infos
+    {
+      color: black !important;
+      padding-right: 30px;
+      padding-top: 130px;
+    }
+
+    #clientDropdown
+    {
+      color: black !important;
+      padding-right: 10px;
+    }
+
+    #img_picto_panier
+    {
+      margin-right: -10px;
+    }
+
+    #img_picto_drapeau
+    {
+      margin-right: 30px;
+    }
+
+    #guitare
+    {
+      width: 129%;
+      padding-bottom: 20px;
+      margin-left: -60px;
+    }
+
+    #banniere_droite
+    {
+      margin-left: 70px;
+    }
+
+    #imgguit, #imgbat, #imgpia, #imgmic, #img_sono, #img_case, #img_cable, #img_saxo
+    {
+      width: 100%;
+      display: block;
+    }
+
+    #titre_categories
+    {
+      margin-left: 12px
+    }
+
+    #titre_meilleures_ventes
+    {
+      margin-left: -20px
+    }
+
+    #titre_partenaires
+    {
+      margin-top: 30px;
+      margin-left: -20px;
+    }
+
+    #img_meilleures_ventes
+    {
+      width: 95%;
+      padding-right: 25px;
+    }
+
+    #img_partenaires
+    {
+      margin-left: -5px;
+      width: 90%;
+      padding-bottom: 10px;
+    }
+
+    #img8
+    {
+        margin-left: -2px;
+        width: 100%;
+    }
+
+    #produitDropdown2
+    {
+        padding-right: 10px;
+        display: inline-block;
+    }
+
+    #bouton_deconnexion
+    {
+        display: none;
+    }
+
+    /**** SECURITY/LOGIN.HTML ****/
+    #img_connexion
+    {
+        width: 50%;
+    }
+
+    /**** CLIENT/INDEX.HTML ****/
+    #btn_voir
+    {
+        margin-top: -2px;
+        margin-bottom: 5px;
+    }
+
+    #btn_modif
+    {
+        margin-bottom: -3px;
+    }
+
+    /**** CLIENT/ADRESSE.HTML ****/
+    hr
+    {
+        margin-top: 70px;
+    }
+
+    #adresse_panier
+    {
+        margin-bottom: 10px;
+    }
+
+    #img_adresse
+    {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 90px;
+    }
+
+    /**** ORDER/INDEX.HTML ****/
+    #recap_panier
+    {
+        padding-left: 50px;
+    }
+
+    #order_submit
+    {
+        margin-left: 0 auto;
+    }
+
+    .order-summary
+    {
+      margin-bottom: 10px;
+    }
+
+    /**** CART/INDEX.HTML ****/
+    #supprimer_mon_panier
+    {
+        margin-top: 10px;
+    }
+
+    /**** COMMANDE_VALIDER/INDEX.HTML ****/
+    #img_conf_commande
+    {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    /**** PRODUIT/NEW.HTML ****/
+    #new_product
+    {
+      width: 50%;
+    }
+
+    /**** PRODUIT/INDEX.HTML ****/
+    .card
+    {
+        height: 450px;
+        width: 350px;
+    }
+
+    #card_img
+    {
+      height: 250px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px)
+  {
+    /**** ACCUEIL ****/
+    #alerte1
+    {
+        margin-left: 7px !important;
+    }
+
+    #nav_infos
+    {
+      color: black !important;
+      padding-right: 30px;
+      padding-top: 120px;
+    }
+
+    #clientDropdown
+    {
+      color: black !important;
+      padding-right: 10px;
+    }
+
+    #img_picto_panier
+    {
+      margin-right: -30px;
+    }
+
+    #img_picto_drapeau
+    {
+      margin-right: 25px;
+    }
+
+    #guitare
+    {
+      width: 106%;
+      padding-bottom: 20px;
+      margin-left: -30px;
+    }
+
+    #banniere_droite
+    {
+      padding-left: 190px;
+    }
+
+    #imgguit, #imgbat, #imgpia, #imgmic, #img_sono, #img_case, #img_cable, #img_saxo
+    {
+      margin: 0 auto;
+      width: 80%;
+      display: block;
+    }
+
+    #titre_categories
+    {
+      margin-left: 12px
+    }
+
+    #titre_meilleures_ventes
+    {
+      margin-left: -20px
+    }
+
+    #titre_partenaires
+    {
+      margin-top: 30px;
+      margin-left: -20px;
+    }
+
+    #img_meilleures_ventes
+    {
+      width: 95%;
+      padding-left: 20px;
+    }
+
+    #img_partenaires
+    {
+      margin-left: 15px;
+      width: 90%;
+      padding-bottom: 10px;
+    }
+
+    #img8
+    {
+        margin-left: -2px;
+        width: 100%;
+    }
+
+    #produitDropdown2
+    {
+        padding-right: 10px;
+        display: inline-block;
+    }
+
+    /**** CLIENT/ADRESSE.HTML ****/
+    hr
+    {
+        margin-top: 70px;
+    }
+
+    #adresse_panier
+    {
+        margin-bottom: 10px;
+    }
+
+    #img_adresse
+    {
+        margin-top: 40px;
+        margin-left: 20px;
+        width: 90px;
+    }
+
+    /***** ORDER/ADD.HTML ****/
+    #recap_commande
+    {
+        padding-right: 80px;
+    }
+
+    /**** COMMANDE_VALIDER/INDEX.HTML ****/
+    #img_conf_commande
+    {
+      width: 20%;
+      margin-right: 20px;
+    }
+
+    /**** PRODUIT/INDEX.HTML ****/
+    .card
+    {
+        height: 450px;
+        width: 350px;
+    }
+
+    #card_img
+    {
+      height: 250px;
+    }
+  }
+
+  /* TAILLE ECRAN DE MON ORDINATEUR PORTABLE */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px)
+  {
+    /**** ACCUEIL ****/
+    #nav2
+    {
+        font-size: 14pt;
+    }
+
+    #nav2 li
+    {
+        margin-left: 15px;
+    }
+
+    #nav2 a
+    {
+        padding-right: 2px;
+        padding-left: 12px;
+    }
+
+    #nav3
+    {
+        margin-top: 4px;
+        font-size: 12pt;
+        margin-left: 24px;
+    }  
+
+    #img_picto_panier
+    {
+      margin-right: -80px;
+    }
+
+    #icone_list, #icone_plus
+    {
+        margin-left: 10px;
+    }
+
+    #icone_list1
+    {
+        margin-left: 10px;
+    }
+
+    #liste_produits
+    {
+        margin-right: 5px;
+    }
+
+    #guitare
+    {
+      padding-bottom: 20px;
+      margin-left: -18px;
+    }
+
+    #banniere_droite
+    {
+      margin-left: 15px;
+    }
+
+    #titre_partenaires
+    {
+      margin-left: 62px;
+    }
+
+    #img_partenaires
+    {
+      margin-left: 65px;
+      width: 80%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    #img8
+    {
+        margin-left: -5px;
+        width: 100%;
+    }
+
+    /***** CLIENT/SHOW.HTML ****/
+    #btn_suppr
+    {
+        margin-right: -15px;
+    }
+
+    /***** CLIENT/INDEX.HTML ****/
+    #btn_voir
+    {
+        margin-top: -2px;
+        margin-bottom: 5px;
+    }
+
+    #btn_modif
+    {
+        margin-bottom: -3px;
+    }
+
+    /**** PRODUIT/INDEX.HTML ****/
+    .card
+    {
+        height: 450px;
+        width: 350px;
+    }
+
+    #card_img
+    {
+      height: 250px;
+    }
+  }
+
+  /* TAILLE ECRAN DE MON SECOND MONITEUR */
+  @media only screen and (min-width: 1440px) and (max-width: 2559px)
+  {
+    /**** PRODUIT/INDEX.HTML ****/
+    .card
+    {
+      height: 500px;
+    }
+  }
+
+  @media only screen and (min-width: 2560px)
+  {
+    /**** PRODUIT/INDEX.HTML ****/
+    .card
+    {
+      height: 600px;
+    }
+  }
+
+  
+  /* Modifications du CSS */

@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajout de produit(s){% endblock %}
+
+{% block body %}
+    <div class="container">
+    
+        <h1 class="text-center">Ajouter un nouveau produit</h1>
+
+        <div class="col-12 mt-4 text-center">
+        <img id="new_product" src="{{ asset('img/PRODUITS/new_product4.png') }}" class="col-12" alt="Nouveau produit" title="Nouveau produit" />
+        </div>
+
+        {{ include('produit/_form.html.twig') }}
+
+    </div>
+{% endblock %}

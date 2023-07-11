@@ -1,0 +1,133 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+    <h1 class="text-center mb-5">Inscription</h1>
+
+    <div class="col-12 mt-4 text-center">
+        <img id="img_inscription" src=" {{ asset('img/BODY/ESPACE CLIENT/register2.jpg') }}" alt="img inscription" title="img inscription" />
+    </div>
+
+    {# Le novalidate est important pour permettre l'affichage des messages d'erreur personnalisées (NotBlank par exemple) #}
+    {{ form_start(form, {'attr' : { 'novalidate': 'novalidate'}}) }}
+    
+        <div class="col-12">
+            <div class="form-group" id="mail">
+                {{ form_label(form.cliEmail, 'Votre e-mail :') }}
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-group">
+                {{ form_widget(form.cliEmail) }}
+                {{ form_help(form.cliEmail) }}
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-group" id="mdpasse">
+                {{ form_label(form.cliPassword, 'Créer votre mot de passe :') }}
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-group">
+                {{ form_widget(form.cliPassword, {'id':'password'}) }}
+                <button type="button" id="afficher_mdp" title="Avez-vous entré votre mot de passe correctement ?" 
+                    onmousedown="password.type='text';" 
+                    onmouseup="password.type='password';" 
+                    onmouseout="password.type='password';">Afficher
+                </button>
+                {{ form_help(form.cliPassword) }}
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="strength"></div>
+            </div>
+        </div>
+    
+        <div class="col-12">
+            <div class="form-group" id="conf_mdpasse">
+                {{ form_label(form.cliConfPassword, 'Confirmez votre mot de passe :') }}
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-group">
+                {{ form_widget(form.cliConfPassword, {'id':'conf_password'}) }}
+                <button type="button" id="afficher_conf_mdp" title="Avez-vous entré votre mot de passe correctement ?" 
+                    onmousedown="conf_password.type='text';" 
+                    onmouseup="conf_password.type='password';" 
+                    onmouseout="conf_password.type='password';">Afficher
+                </button>
+                {{ form_help(form.cliConfPassword) }}
+            </div>
+        </div>
+    
+
+    <div class="col-12 mt-5 mb-5">
+        <h2><i class="fas fa-users" id="identifiants"></i>Vos identifiants</h2>
+    </div>
+
+    <div class="col-12">
+        <div class="form-group" id="nom">
+            {{ form_label(form.cliNom, 'Votre nom :') }}
+        </div>
+
+        <div class="form-group">
+            {{ form_widget(form.cliNom) }}
+            {{ form_help(form.cliNom) }}
+        </div>
+
+        <div class="form-group" id="prenom">
+            {{ form_label(form.cliPrenom, 'Votre prénom :') }}
+        </div>
+
+        <div class="form-group">
+            {{ form_widget(form.cliPrenom) }}
+            {{ form_help(form.cliPrenom) }}
+        </div>
+
+        <div class="form-group" id="adresse">
+            {{ form_label(form.cliAdresse, 'Adresse :') }}
+        </div>    
+
+        <div class="form-group">
+            {{ form_widget(form.cliAdresse) }}
+            {{ form_help(form.cliAdresse) }}
+        </div>  
+
+        <div class="form-group" id="cp">
+            {{ form_label(form.cliCp, 'Code postal :') }}
+        </div> 
+
+        <div class="form-group">
+            {{ form_widget(form.cliCp) }}
+            {{ form_help(form.cliCp) }}
+        </div> 
+
+        <div class="form-group" id="ville">
+            {{ form_label(form.cliVille, 'Ville :') }}
+        </div>  
+
+        <div class="form-group">
+            {{ form_widget(form.cliVille) }}
+            {{ form_help(form.cliVille) }}
+        </div> 
+
+        <div id="btn_inscription" class="col-12 text-right">
+            <input class="btn btn-danger" type="reset" value="ANNULER">
+            <a class="btn btn-secondary" href="{{ path('home') }}">RETOUR</a>
+            <button class="btn btn-success">{{ button_label|default('JE M\'INSCRIS') }}</button>
+        </div>
+    
+    </div>
+
+    {{ form_end(form) }}
+
+<script src="{{ asset('js/password.js') }}"></script>
+
+{% endblock %}
