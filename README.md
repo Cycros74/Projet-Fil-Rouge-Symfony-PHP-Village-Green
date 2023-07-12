@@ -166,15 +166,15 @@ Sequence utilisateur:
 ![Markdown Logo](https://www.zupimages.net/up/23/09/z1qy.png)
 
 Ici le controller "SecurityController" nous permet de gérer deux routes.
-La premiere 
+La première 
 
 ``` #[Route(path: '/login', name: 'app_login')] ```
 
-permet de lié cette route à notre twig (vue) qui correspond a la page connexion de l'utilisateur.
+permet de lier cette route à notre twig (vue) qui correspond à la page connexion de l'utilisateur.
 
 
 La seconde vue 
 
 ``` #[Route(path: '/logout', name: 'app_logout')] ```
 
-permet de deconnecté l'utilisateur via la ``` public function logout() ````
+permet de déconnecter l'utilisateur via la ``` public function logout() ````
